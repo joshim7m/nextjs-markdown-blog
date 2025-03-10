@@ -1,3 +1,4 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
@@ -21,11 +22,11 @@ export default function RootLayout({ children }) {
 
   let footer = (
     <footer>
-      <p>Made with 💛</p>
+      <p>Made with {"\u{1F49B}"}</p>
     </footer>
   )
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={inter.className}>
         {header}
         {children}
